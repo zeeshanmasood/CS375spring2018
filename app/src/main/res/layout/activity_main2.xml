@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mharis.androidtoolpractise.Main2Activity">
+
+
+    <TextView
+        android:id="@+id/text_id11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:text="Controls Assignment"
+        android:textColor="@android:color/holo_blue_dark"
+
+        android:textColorHighlight="@android:color/primary_text_dark"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/text_id111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="19dp"
+        android:text="Check Box :"
+
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorHighlight="@android:color/primary_text_dark"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_id11" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="23dp"
+        android:text="Hello !"
+        app:layout_constraintStart_toEndOf="@+id/text_id111"
+        app:layout_constraintTop_toTopOf="@+id/text_id111" />
+
+
+    <TextView
+        android:id="@+id/text_id12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="15dp"
+        android:text="Radio Button :"
+
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorHighlight="@android:color/primary_text_dark"
+        android:textSize="18dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
+
+
+    >
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="95dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="5dp"
+        android:checked="false"
+
+        android:text="JAVA"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/radioButton2"
+        app:layout_constraintStart_toStartOf="@+id/text_id12"
+        app:layout_constraintTop_toBottomOf="@+id/text_id12" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+
+
+        android:checked="false"
+        android:text="ANDROID"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/radioButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioButton3" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:checked="false"
+        android:text="HTML"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15dp"
+
+        app:layout_constraintBaseline_toBaselineOf="@+id/radioButton"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/text_id13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="16dp"
+        android:text="Spinner :"
+
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorHighlight="@android:color/primary_text_dark"
+        android:textSize="18dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="17dp"
+        android:text="Category:"
+
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="@+id/text_id13"
+        app:layout_constraintTop_toBottomOf="@+id/text_id13" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="26dp"
+
+
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/text_id11"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+
+</android.support.constraint.ConstraintLayout>

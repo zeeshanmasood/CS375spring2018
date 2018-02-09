@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mharis.androidtoolpractise.MainActivity">
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:text="Controls Assignment"
+        android:textColor="@android:color/holo_blue_dark"
+
+        android:textColorHighlight="@android:color/primary_text_dark"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/text_id1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:layout_marginTop="19dp"
+        android:text="Edit Text :"
+        android:textColor="@android:color/holo_blue_dark"
+
+        android:textColorHighlight="@android:color/primary_text_dark"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/text_id"
+        app:layout_constraintStart_toStartOf="@+id/text_id"
+        app:layout_constraintTop_toBottomOf="@+id/text_id" />
+
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Enter Text"
+        app:layout_constraintStart_toEndOf="@+id/text_id1"
+        app:layout_constraintTop_toTopOf="@+id/text_id1" />
+
+
+    <TextView
+        android:id="@+id/text_id2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="1dp"
+        android:text="Button :"
+
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorHighlight="@android:color/primary_text_dark"
+        android:textSize="18dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:text="Submit"
+
+        app:layout_constraintBottom_toTopOf="@+id/text_id3"
+        app:layout_constraintStart_toEndOf="@+id/text_id2" />
+
+    <TextView
+        android:id="@+id/text_id3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="55dp"
+        android:text="Image Button :"
+
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorHighlight="@android:color/primary_text_dark"
+        android:textSize="18dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_id2" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="206dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginTop="17dp"
+
+        android:src="@drawable/gifticon"
+        app:layout_constraintBottom_toTopOf="@+id/button22"
+        app:layout_constraintEnd_toEndOf="@+id/button22"
+        app:layout_constraintTop_toBottomOf="@+id/text_id3"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:text="Open Next Activity"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
